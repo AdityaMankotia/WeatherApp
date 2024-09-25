@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #2C3E50; /* Dark background */
+    color: #ECF0F1; /* Light text for contrast */
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjusted for navbar height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: rgba(44, 62, 80, 0.85); /* Semi-transparent dark background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    width: 80%; /* Responsive width */
+    max-width: 600px; /* Max width for larger screens */
+}
+
+.weather .temp {
+    font-size: 6rem; /* Increased temperature font size */
+    color: #E74C3C; /* Bright red for temperature */
+    margin-right: 20px;
+}
+
+.time_location p {
+    font-size: 2.5rem; /* Larger font for city name */
+    font-weight: bold;
+}
+
+.time_location span {
+    font-size: 1.2rem; /* Increased date font size */
+    color: #BDC3C7; /* Slightly muted color */
+}
+
+.weather_condition span {
+    font-size: 1.8rem; /* Larger condition text */
+    color: #E74C3C; /* Consistent color with temperature */
+}
+
+.weather_condition img {
+    width: 80px; /* Increased icon size */
+    margin-left: 10px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px; /* More space above the forecast */
+    width: 90%; /* Full width with padding */
+    max-width: 800px; /* Max width for larger screens */
+}
+
+.forecast-day {
+    background: #34495E; /* Darker background for cards */
+    border-radius: 10px;
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    color: #ECF0F1; /* Light text for readability */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    flex: 1;
+    margin: 0 10px; /* Space between cards */
+    max-width: 150px; /* Increased max width for better visibility */
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+    background-color: #1ABC9C; /* Teal on hover */
+}
+
+.forecast-day h3 {
+    margin-bottom: 10px; /* More space for titles */
+    font-size: 1.5rem; /* Increased title size */
+}
+
+.forecast-day img {
+    width: 50px; /* Slightly larger icon size */
+    height: 50px;
+    margin-bottom: 10px; /* More space */
+}
+
+.forecast-day p {
+    margin: 5px 0; /* Adjusted margin */
+    font-size: 1rem; /* Larger font for details */
+}
+
+nav {
+    height: 80px; /* Height for nav */
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.85); /* Semi-transparent dark */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Light shadow */
+}
+
+nav form {
+    width: 70%;
+    display: flex;
+}
+
+.searchField {
+    font-size: 1.2rem; /* Increased font for input */
+    outline: none;
+    color: #2C3E50; /* Dark text for input */
+    background-color: #ECF0F1; /* Light gray background for input */
+    padding: 0.75rem; /* Adjust padding */
+    border: 2px solid #E74C3C; /* Bright red border */
+    border-radius: 5px;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+.searchField:focus {
+    border-color: #1ABC9C; /* Teal on focus */
+}
+
+nav form button {
+    background-color: #E74C3C; /* Bright red for button */
+    font-size: 1.2rem; /* Increased font for buttons */
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 15px; /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav form button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
